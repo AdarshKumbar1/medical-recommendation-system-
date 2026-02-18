@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | Health Care Center</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#f4f6f8;
+    font-family:'Segoe UI',sans-serif;
+}
+.navbar{background:#111827;}
+.hero-card{
+    background:#fff;
+    border-radius:16px;
+    padding:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+.about-card{
+    background:#fff;
+    border-radius:14px;
+    padding:25px;
+    box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+footer{background:#111827;}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow">
+<div class="container-fluid">
+<img src="{{ url_for('static', filename='images/doctor.png') }}"
+style="width:42px;height:42px;border-radius:50%;border:2px solid #fff"
+class="me-2">
+
+<a class="navbar-brand fw-bold" href="/">Health Center</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item"><a class="nav-link active" href="/about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="/developer">Developer</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="container my-5">
+<div class="hero-card text-center">
+<h1 class="fw-bold">About Health Care Center</h1>
+<p class="text-muted mt-2">
+Where healthcare meets technology for a smarter future.
+</p>
+</div>
+</div>
+
+<!-- CONTENT -->
+<div class="container mb-5">
+<div class="about-card mb-4">
+<h4 class="text-primary fw-semibold">🌍 Our Vision</h4>
+<p>Empowering individuals with trusted healthcare information.</p>
+</div>
+
+<div class="about-card mb-4">
+<h4 class="text-primary fw-semibold">👨‍⚕️ Who We Are</h4>
+<p>A team of healthcare professionals and data scientists.</p>
+</div>
+
+<div class="about-card mb-4">
+<h4 class="text-primary fw-semibold">🎯 Our Mission</h4>
+<p>AI-powered disease prediction with awareness.</p>
+</div>
+
+<div class="about-card mb-4">
+<h4 class="text-primary fw-semibold">⚙️ How We Do It</h4>
+<p>Machine learning trained on large medical datasets.</p>
+</div>
+
+<div class="about-card">
+<h4 class="text-primary fw-semibold">❤️ Your Well-being</h4>
+<p>Clear, accurate, and practical medical guidance.</p>
+</div>
+</div>
+
+<footer class="text-white text-center py-3">
+© 2025 Health Care Center
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

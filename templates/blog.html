@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog | Health Care Center</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#f4f6f8;
+    font-family:'Segoe UI',sans-serif;
+}
+.navbar{background:#111827;}
+.hero-card{
+    background:#ffffff;
+    border-radius:16px;
+    padding:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+.blog-card{
+    background:#ffffff;
+    border-radius:14px;
+    padding:30px;
+    box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+.blog-card h3, .blog-card h4{
+    color:#2563eb;
+    font-weight:600;
+}
+.blog-card p, .blog-card li{
+    color:#374151;
+    line-height:1.7;
+}
+footer{background:#111827;}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow">
+<div class="container-fluid">
+<img src="{{ url_for('static', filename='images/doctor.png') }}"
+style="width:42px;height:42px;border-radius:50%;border:2px solid #fff"
+class="me-2">
+
+<a class="navbar-brand fw-bold" href="/">Health Center</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="/developer">Developer</a></li>
+<li class="nav-item"><a class="nav-link active" href="/blog">Blog</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="container my-5">
+<div class="hero-card text-center">
+<h1 class="fw-bold">Health & AI Blog</h1>
+<p class="text-muted mt-2">
+Insights on AI-powered healthcare and intelligent medical systems.
+</p>
+</div>
+</div>
+
+<!-- BLOG CONTENT -->
+<div class="container mb-5">
+<div class="blog-card">
+
+<h3 class="text-center mb-4">
+Building a Symptom-Based Disease Diagnosis Web App with Flask and Machine Learning
+</h3>
+
+<p>
+In today’s digital era, access to accurate and timely healthcare information is more important
+than ever. With the rise of remote healthcare solutions, this project focuses on building a
+symptom-based disease diagnosis web application using Flask and Machine Learning.
+</p>
+
+<h4>The Problem</h4>
+<p>
+People often experience symptoms and seek quick insights into potential health issues.
+Due to overlapping symptoms across diseases, identifying the root cause can be challenging.
+This project aims to simplify that process through technology.
+</p>
+
+<h4>The Solution</h4>
+<p>
+We developed a web application that allows users to enter symptoms and receive intelligent
+disease predictions using a trained Decision Tree Classifier.
+</p>
+
+<ol>
+<li><strong>Symptom Input:</strong> Users provide symptoms through a simple and intuitive interface.</li>
+<li><strong>Machine Learning Model:</strong> A Decision Tree Classifier trained on symptom-disease data.</li>
+<li><strong>Prediction:</strong> The model predicts the most likely disease instantly.</li>
+<li><strong>Additional Insights:</strong> Users receive disease descriptions, precautions, medications,
+diet suggestions, and workout guidance.</li>
+</ol>
+
+<h4>Key Features</h4>
+<ul>
+<li><strong>User-Friendly Interface:</strong> Simple, clean, and accessible design.</li>
+<li><strong>Accurate Predictions:</strong> Machine learning-powered diagnosis.</li>
+<li><strong>Comprehensive Guidance:</strong> Medical details beyond just predictions.</li>
+<li><strong>Educational Content:</strong> Informative blogs to promote health awareness.</li>
+</ul>
+
+<h4>Conclusion</h4>
+<p>
+This symptom-based disease diagnosis system demonstrates how AI and healthcare can work
+together to empower users with actionable health insights. By combining machine learning
+and modern web technologies, the platform enhances accessibility, awareness, and decision-making
+in healthcare.
+</p>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white text-center py-3">
+© 2025 Health Care Center
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

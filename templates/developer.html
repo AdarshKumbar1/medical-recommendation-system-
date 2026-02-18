@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Developer | Health Care Center</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#f4f6f8;
+    font-family:'Segoe UI',sans-serif;
+}
+.navbar{background:#111827;}
+.hero-card{
+    background:#ffffff;
+    border-radius:16px;
+    padding:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+.dev-card{
+    background:#ffffff;
+    border-radius:14px;
+    padding:25px;
+    box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+footer{background:#111827;}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow">
+<div class="container-fluid">
+<img src="{{ url_for('static', filename='images/doctor.png') }}"
+style="width:42px;height:42px;border-radius:50%;border:2px solid #fff"
+class="me-2">
+
+<a class="navbar-brand fw-bold" href="/">Health Center</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+<li class="nav-item"><a class="nav-link active" href="/developer">Developer</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="container my-5">
+<div class="hero-card text-center">
+<h1 class="fw-bold">Meet the Developer</h1>
+<p class="text-muted mt-2">
+Building intelligent healthcare solutions using AI and Machine Learning.
+</p>
+</div>
+</div>
+
+<!-- CONTENT -->
+<div class="container mb-5">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+
+<div class="dev-card mb-4">
+<h4 class="text-primary fw-semibold">👨‍💻 About Junaid Khan</h4>
+<p class="text-muted">
+Hello, I’m <strong>Junaid Khan</strong>, an AI and Machine Learning Engineer with over
+five years of experience in designing intelligent, data-driven solutions.
+I am passionate about using technology to create meaningful impact and
+solve real-world problems.
+</p>
+</div>
+
+<div class="dev-card mb-4">
+<h4 class="text-primary fw-semibold">🧠 My Expertise</h4>
+<p class="text-muted">
+With a strong academic foundation in computer science and hands-on experience
+in AI and ML, I have worked on diverse international projects that pushed
+the boundaries of predictive analytics, intelligent systems, and automation.
+</p>
+</div>
+
+<div class="dev-card mb-4">
+<h4 class="text-primary fw-semibold">⭐ Commitment to Excellence</h4>
+<p class="text-muted">
+My work is driven by quality, innovation, and user-centric design.
+From developing machine learning models to building intuitive interfaces,
+I strive to deliver solutions that are reliable, scalable, and impactful.
+</p>
+</div>
+
+<div class="dev-card mb-4">
+<h4 class="text-primary fw-semibold">🏥 Passion for Health Tech</h4>
+<p class="text-muted">
+The development of <strong>Health Care Center</strong> reflects my passion for applying
+AI in healthcare. I strongly believe that intelligent systems can transform
+healthcare by making it more accessible, informative, and personalized.
+</p>
+</div>
+
+<div class="dev-card">
+<h4 class="text-primary fw-semibold">🚀 Join Me on This Journey</h4>
+<p class="text-muted">
+I invite you to explore this platform and experience the power of AI-driven
+health insights. Together, we can promote awareness, well-being, and a
+healthier future through technology.
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white text-center py-3">
+© 2025 Health Care Center
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
